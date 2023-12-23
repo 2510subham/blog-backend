@@ -11,11 +11,9 @@ const port = process.env.PORT || 8000;
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.get('/ping', logMiddleware, (req, res) => {
-    res.send('Pong');
-});
+
 app.get("/", (req, res) => {
-    res.send("Welcome to my app");
+    res.send("Welcome to my Blog app");
 });
 app.use("/api/auth", logMiddleware, authRoutes);
 app.use("/api/blog", logMiddleware, blogRoutes);
