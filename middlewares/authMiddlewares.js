@@ -8,7 +8,6 @@ export const validateUser = async (req, res, next) => {
             token,
             process.env.JWT_SECRET
         );
-        console.log("Decode", decode);
         req.user = decode;
         next();
     } catch (error) {

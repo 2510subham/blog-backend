@@ -41,7 +41,6 @@ export async function login(req, res) {
         const token = JWT.sign({ _id: isUserExist._id }, process.env.JWT_SECRET, {
             expiresIn: "7d",
         });
-        console.log("Token", token);
         res.status(200).json({
             success: true,
             message: "User logged in successfully",
