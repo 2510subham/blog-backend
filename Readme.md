@@ -1,15 +1,15 @@
 ## Blog Api CRUD with User authentication 
 
-1)clone the repo and run npm install
-2)then, npm start
+1) clone the repo and run npm install
+2) npm start
 
 # Tech stack used
 
-1)MongoDB as DB,Express to set up the server
+1) MongoDB as DB,Express to set up the server
 
 # Routes
 
-1)to check the setup ,run "/ping"
+1) to check the setup ,run "/ping"
 
 ## Auth Routes
 
